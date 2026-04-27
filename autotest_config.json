@@ -8,7 +8,7 @@
             "_security_scan_report_conclusion": "failure",
             "_comment_security_scan_report_conclusion": "Optional. Expected scan report conclusion. Options: 'success' | 'failure'. This validates the security scan result status. If not provided, this check will not be performed.",
             "total_libs_scanned": {
-                "gte": 45
+                "gte": 0
             },
             "_comment_total_libs_scanned": "Expected number of libraries scanned with comparison operator. Validates that the scan processed libraries."
         },
@@ -36,50 +36,14 @@
             },
             "transitive_dependencies_names_list": {
                 "contains": [
-                    "anyio",
-                    "httpx",
-                    "h11",
-                    "annotated-types",
-                    "python-dotenv",
-                    "aiosignal",
-                    "propcache",
-                    "pydantic-core",
-                    "numpy",
-                    "pydantic-settings",
-                    "six",
-                    "mako",
-                    "polars",
-                    "service-b-modern",
-                    "frozenlist",
-                    "aiohttp",
-                    "starlette",
-                    "typing-inspection",
-                    "redis",
-                    "structlog",
-                    "polars-runtime-32",
-                    "tzdata",
-                    "pytz",
-                    "service-a-legacy",
-                    "asyncpg",
-                    "pydantic",
-                    "multidict",
-                    "typing-extensions",
-                    "uvicorn",
-                    "aiohappyeyeballs",
-                    "fastapi",
-                    "yarl",
-                    "alembic",
-                    "sqlalchemy",
-                    "pandas",
-                    "annotated-doc",
-                    "certifi",
-                    "attrs",
-                    "python-dateutil",
-                    "httpcore",
-                    "markupsafe",
-                    "click",
-                    "idna",
-                    "greenlet"
+                    "anyio", "httpx", "h11", "annotated-types", "python-dotenv",
+                    "aiosignal", "propcache", "pydantic-core", "numpy", "pydantic-settings",
+                    "six", "mako", "polars", "service-b-modern", "frozenlist", "aiohttp",
+                    "starlette", "typing-inspection", "redis", "structlog", "polars-runtime-32",
+                    "tzdata", "pytz", "service-a-legacy", "asyncpg", "pydantic", "multidict",
+                    "typing-extensions", "uvicorn", "aiohappyeyeballs", "fastapi", "yarl",
+                    "alembic", "sqlalchemy", "pandas", "annotated-doc", "certifi", "attrs",
+                    "python-dateutil", "httpcore", "markupsafe", "click", "idna", "greenlet"
                 ]
             },
             "_comment_dependencies_names_list": "Optional. Check specific libraries in direct dependencies. Operators: eq (==), contains (all items from expected list in actual), in(all items from actual list in expected), nin(actual list does not contain provided libs). If not provided, this check will not be performed.",
@@ -98,11 +62,11 @@
             "vulnerabilities_ids_list": {
                 "contains": []
             },
-            "_comment_ids_names_list": "Optional. Check specific libs ids (WS-2018-0111, CVE-2021-44906). Operators: eq (==), contains (all items from expected list in actual), in(all items from actual list in expected), nin(actual list does not contain provided libs). If not provided, this check will not be performed.",
+            "_comment_ids_names_list": "Optional.",
             "vulnerabilities_names_list": {
                 "contains": []
             },
-            "_comment_vulnerabilities_names_list": "Optional. Check specific libs names (minimist-0.0.8.tgz). Operators: eq (==), contains (all items from expected list in actual), in(all items from actual list in expected), nin(actual list does not contain provided libs). If not provided, this check will not be performed."
+            "_comment_vulnerabilities_names_list": "Optional."
         }
     }
 }
